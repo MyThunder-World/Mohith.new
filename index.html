@@ -872,8 +872,7 @@
         document.addEventListener('DOMContentLoaded', function() {
             // Add staggered animation delays
             const animatedElements = document.querySelectorAll('.animate-text');
-            animatedElements.forEach((element, index)
-            {   
+            animatedElements.forEach((element, index) => {   
                     element.style.transitionDelay = `${index * 0.1}s`;
                 });
             // Trigger initial animations
