@@ -79,7 +79,7 @@
         }
 
         body.gold-theme nav {
-            background: rgba(20, 20, 19, 0.95);
+            background: rgba(26, 22, 17, 0.95);
         }
 
         .nav-container {
@@ -872,9 +872,10 @@
         document.addEventListener('DOMContentLoaded', function() {
             // Add staggered animation delays
             const animatedElements = document.querySelectorAll('.animate-text');
-            animatedElements.forEach((element, index) => {   
-                element.style.transitionDelay = `${index * 0.1}s`;
-            });
+            animatedElements.forEach((element, index)
+            {   
+                    element.style.transitionDelay = `${index * 0.1}s`;
+                });
             // Trigger initial animations
             animatedElements.forEach(element => {
                 element.classList.add('animate');
