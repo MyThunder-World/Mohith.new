@@ -774,7 +774,7 @@
             <h2 class="section-title animate-text">My Projects</h2>
             <div class="projects-grid">
                 <div class="project-card">
-                    <h3 class="project-title">Combat Zone: FPS Arena</h3>
+                    <h3 class="project-title">Thunder Game V4</h3>
                     <p class="project-description">
                         An intense FPS shooting game featuring PVPVE gameplay mechanics. Players engage in tactical combat across multiple maps with diverse weapon systems, team strategies, and dynamic AI enemies that create an ever-changing battlefield experience.
                     </p>
@@ -872,4 +872,16 @@
         document.addEventListener('DOMContentLoaded', function() {
             // Add staggered animation delays
             const animatedElements = document.querySelectorAll('.animate-text');
-            animatedElements.forEach((element, index)
+            animatedElements.forEach((element, index) => {   
+                element.style.transitionDelay = `${index * 0.1}s`;
+            });
+            // Trigger initial animations
+            animatedElements.forEach(element => {
+                element.classList.add('animate');
+            });
+        });
+    </script>   
+</body>
+</html>
+<!-- End of HTML Document -->
+<!-- This is a simple HTML document for a Roblox game developer portfolio. It includes sections for the hero, about, aspirations, projects, and contact information. The design features a modern aesthetic with smooth animations and responsive layout. The theme can be toggled between gold and purple. -->
