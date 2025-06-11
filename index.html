@@ -41,7 +41,7 @@
             --secondary-color: #f59e0b;
             --accent-color: #0e0d0d;
             --bg-dark: #0c0c0b;
-            --bg-secondary: #2d2416;
+            --bg-secondary: #080808;
             --bg-accent: #161615;
             --text-primary: #fef3c7;
             --text-secondary: #fde68a;
@@ -661,18 +661,38 @@
     <section id="hero">
         <div class="section-content">
             <div class="hero-container">
-                <div class="hero-content"></div>
-                    <h1 class="main-title animate-text">Roblox Game</h1>
+                <div class="hero-content">
+                    <h1 class="main-title animate-text">Roblox Game Developer</h1>
                     <p class="subtitle animate-text delay-1">Creating immersive gaming experiences</p>
-                    <p class="description animate-text delay-2"></p>
+                    <p class="description animate-text delay-2">
                         Passionate about game development, I specialize in creating engaging Roblox experiences that bring players together in virtual worlds filled with adventure and excitement.
                     </p>
                     <a href="#projects" class="cta-button animate-text delay-3">View My Games</a>
-                    <h2 class="main-title animate-text" style="font-size:2.5rem; margin-top:2.5rem;">Developer</h2>
                 </div>
+                
                 <div class="profile-section">
-                    <div class="profile-container">
-                        <img src="https://i.ibb.co/Wvp5tzHk/profile.png" alt="Profile" class="profile-image">
+                    <div class="decoration decoration-1"></div>
+                    <div class="decoration decoration-2"></div>
+                    <div class="profile-container animate-text delay-1">
+                        <div class="profile-bg"></div>
+                        <svg width="350" height="450" viewBox="0 0 350 450" class="profile-image">
+                            <defs>
+                                <linearGradient id="profileGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:var(--primary-color);stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:var(--secondary-color);stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <rect width="350" height="450" fill="url(#profileGrad)" rx="20"/>
+                            <text x="50%" y="35%" dominant-baseline="middle" text-anchor="middle" 
+                                  font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white">Roblox</text>
+                            <text x="50%" y="45%" dominant-baseline="middle" text-anchor="middle" 
+                                  font-family="Arial, sans-serif" font-size="18" fill="white">Game Developer</text>
+                            <text x="50%" y="60%" dominant-baseline="middle" text-anchor="middle" 
+                                  font-family="Arial, sans-serif" font-size="14" fill="rgba(255,255,255,0.8)">Profile Image</text>
+                            <circle cx="175" cy="300" r="40" fill="rgba(255,255,255,0.2)"/>
+                            <text x="175" y="305" dominant-baseline="middle" text-anchor="middle" 
+                                  font-family="Arial, sans-serif" font-size="24" fill="white">🎮</text>
+                        </svg>
                     </div>
                 </div>
             </div>
